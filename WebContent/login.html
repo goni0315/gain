@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>키워드 영화 검색 KEY.B</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/customize.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/customize.js"></script>
+
+
+    <style>
+        /*--------큰로고-----------------*/
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        body{
+            height: 100%;
+            /*font-weight: 800;*/
+            background: url("images/linedpaper_@2x.png") ;
+        }
+
+        svg {
+            display: block;
+            font: 10.5em 'Montserrat';
+            width: 960px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .text-copy {
+            fill: none;
+            stroke: white;
+            stroke-dasharray: 6% 29%;
+            stroke-width: 5px;
+            stroke-dashoffset: 0%;
+            animation: stroke-offset 5.5s infinite linear;
+        }
+
+        .text-copy:nth-child(1){
+            stroke: #1695A3;
+            animation-delay: -1s;
+        }
+
+        .text-copy:nth-child(2){
+            stroke: #ACF0F2;
+            animation-delay: -2s;
+        }
+
+        .text-copy:nth-child(3){
+            stroke: #FFD34E;
+            animation-delay: -3s;
+        }
+
+        .text-copy:nth-child(4){
+            stroke: #FFFAD5;
+            animation-delay: -4s;
+        }
+
+        .text-copy:nth-child(5){
+            stroke: #105B63;
+            animation-delay: -5s;
+        }
+
+        @keyframes stroke-offset{
+            100% {stroke-dashoffset: -35%;}
+        }
+
+        /*---------------로그인--------------------*/
+        .login-container{
+            position: relative;
+            width: 300px;
+            margin: 80px auto;
+            padding: 20px 40px 40px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .login-container::before,.login-container::after{
+            content: "";
+            position: absolute;
+            width: 100%;height: 100%;
+            top: 3.5px;left: 0;
+            background: #fff;
+            z-index: -1;
+            -webkit-transform: rotateZ(4deg);
+            -moz-transform: rotateZ(4deg);
+            -ms-transform: rotateZ(4deg);
+            border: 1px solid #ccc;
+
+        }
+        .login-container::after{
+            top: 5px;
+            z-index: -2;
+            -webkit-transform: rotateZ(-2deg);
+            -moz-transform: rotateZ(-2deg);
+            -ms-transform: rotateZ(-2deg);
+
+        }
+        .form-box{
+            height: 210px;
+            margin-top: 20px;
+        }
+        .form-box input{
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            height:40px;
+            border: 1px solid #ccc;;
+            background: #fafafa;
+            transition:0.2s ease-in-out;
+
+        }
+        .form-box input:focus{
+            outline: 0;
+            background: #eee;
+        }
+
+        .form-box input[type="text"]{
+            border-radius: 5px 5px 0 0;
+            text-transform: lowercase;
+        }
+
+        .form-box input[type="password"]{
+            border-radius: 0 0 5px 5px;
+            border-top: 0;
+        }
+
+        .form-box button.login{
+            margin-top:15px;
+            padding: 10px 20px;
+            width: 100%;
+            color: #FFFFFF;
+
+        }
+a:hover{
+    text-decoration: none;
+}
+
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+        <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">KEY.B</text>
+            </symbol>
+
+            <g class = "g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+        </svg>
+</div>
+<div class="login-container">
+    <div class="form-box">
+        <form action="" method="" style="margin-top: 15px">
+            <input name="user" type="text" placeholder="이메일">
+            <input type="password" placeholder="비밀번호">
+            <button class="btn btn-info login"  type="button" onclick="location.href='index.html' ">로그인</button>
+            <button class="btn btn-success login" type="submit"> 네이버로 로그인</button>
+
+
+        </form>
+
+    </div>
+    <a>비밀번호찾기</a>
+    <a>/</a>
+    <a href="membership.html">회원가입</a>
+</div>
+</div>
+
+
+</body>
+</html>

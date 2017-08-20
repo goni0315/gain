@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>키워드 영화 검색 KEY.B</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/membership.css">
+
+
+
+    <style>
+        /*--------큰로고-----------------*/
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        body{
+            height: 100%;
+            /*font-weight: 800;*/
+            background: url("images/linedpaper_@2x.png") ;
+        }
+        svg {
+            display: block;
+            font: 10.5em 'Montserrat';
+            width: 960px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .text-copy {
+            fill: none;
+            stroke: white;
+            stroke-dasharray: 6% 29%;
+            stroke-width: 5px;
+            stroke-dashoffset: 0%;
+            animation: stroke-offset 5.5s infinite linear;
+        }
+
+        .text-copy:nth-child(1){
+            stroke: #1695A3;
+            animation-delay: -1s;
+        }
+
+        .text-copy:nth-child(2){
+            stroke: #ACF0F2;
+            animation-delay: -2s;
+        }
+
+        .text-copy:nth-child(3){
+            stroke: #FFD34E;
+            animation-delay: -3s;
+        }
+
+        .text-copy:nth-child(4){
+            stroke: #FFFAD5;
+            animation-delay: -4s;
+        }
+
+        .text-copy:nth-child(5){
+            stroke: #105B63;
+            animation-delay: -5s;
+        }
+
+        @keyframes stroke-offset{
+            100% {stroke-dashoffset: -35%;}
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+    <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="80%">KEY.B</text>
+        </symbol>
+
+        <g class = "g-ants">
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+            <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+    </svg>
+</div>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="board">
+            <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+            <div class="board-inner">
+                <ul class="nav nav-tabs" id="myTab">
+                    <div class="liner"></div>
+                    <li class="active">
+                        <a href="#home" data-toggle="tab" title="KEY.B입니다">
+                      <span class="round-tabs one">
+                              <i class="glyphicon glyphicon-home"></i>
+                      </span>
+                        </a></li>
+
+                    <li><a href="#doner" data-toggle="tab" title="completed" >
+                     <!--<span class="round-tabs two">-->
+                         <!--<i class="glyphicon glyphicon-ok"></i>-->
+                     <!--</span>-->
+                    </a>
+                    </li>
+                    <li><a href="#settings" data-toggle="tab" title="키워드?">
+                     <span class="round-tabs three">
+                          <i class="glyphicon glyphicon-comment"></i>
+                     </span> </a>
+                    </li>
+
+                    <li><a href="#messages" data-toggle="tab" title="키워드" >
+                         <!--<span class="round-tabs four">-->
+                              <!--<i class="glyphicon glyphicon-gift"></i>-->
+                         <!--</span>-->
+                    </a></li>
+
+                    <li><a href="#profile" data-toggle="tab" title="프로필">
+                         <span class="round-tabs five">
+                              <i class="glyphicon glyphicon-user"></i>
+                         </span> </a>
+                    </li>
+
+                </ul></div>
+
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="home">
+
+                    <h3 class="head text-center">Welcome to KEY.B<sup>#</sup> <span style="color:#f48260;"></span></h3>
+                    <h3 class="head text-center">어서와, 키워드 검색은 처음이지? <span style="color:#f48260;"></span></h3>
+                    <p class="narrow text-center" style="font-size: 20px;">
+                        KEY.B는 키워드로 영화를 찾아주는 서비스입니다.
+                    </p>
+
+                </div>
+                <div class="tab-pane fade" id="profile">
+                    <h3 class="head text-center">회원가입</h3>
+                    <hr>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="inputName">닉네임</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="inputName" type="text" placeholder="닉네임">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="inputEmail">이메일</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="inputEmail" type="email" placeholder="이메일">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="inputPassword">비밀번호</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="inputPassword" type="password" placeholder="비밀번호">
+                                <p class="help-block">숫자, 특수문자 포함 8자 이상</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="inputPasswordCheck">비밀번호 확인</label>
+                            <div class="col-sm-6">
+                                <input class="form-control" id="inputPasswordCheck" type="password" placeholder="비밀번호 확인">
+                                <p class="help-block">비밀번호를 한번 더 입력해주세요.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label" for="inputAgree">약관 동의</label>
+                            <div class="col-sm-6" data-toggle="buttons">
+                                <label class="btn btn-warning active">
+                                    <input id="agree" type="checkbox" autocomplete="off" chacked>
+                                    <span class="fa fa-check"></span>
+                                </label>
+                                <a href="#">이용약관</a> 에 동의 합니다.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 text-center">
+                                <button class="btn btn-primary" type="button" onclick="location.href='index.html'">회원가입<i class="fa fa-check spaceLeft"></i></button>
+                                <button class="btn btn-danger" type="submit">가입취소<i class="fa fa-times spaceLeft"></i></button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+               <div class="tab-pane fade" id="messages">
+                    <h3 class="head text-center">text</h3>
+                    <p class="narrow text-center">
+                        text
+                    </p>
+
+
+                </div>
+                <div class="tab-pane fade" id="settings">
+                    <h3 class="head text-center">키워드를 입력해주세요!</h3>
+                    <h4 class="text-center" style="font-size: 20px;">가입후 기억에 남는 영화에 대한 키워드를 입력해주세요.</h4>
+                    <h4 class="text-center" style="font-size: 20px;">키워드를 입력하시면 #키워드 검색이 가능합니다.</h4>
+                    <!--<p class="narrow text-center">                             -->
+                    <!--</p>-->
+
+                </div>
+                <div class="tab-pane fade" id="doner">
+                    <div class="text-center">
+                        <i class="img-intro icon-checkmark-circle"></i>
+                    </div>
+                    <h3 class="head text-center"><span>text</span> Bootstrap</h3>
+                    <p class="narrow text-center">
+                        text
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/membership.js"></script>
+</body>
+</html>
